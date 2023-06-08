@@ -26,32 +26,35 @@ Now comes the Decoder which uses this encoded image generates the image of origi
 ### Part - 1
 
 1. Training 3 different types of models for Auto Encoder
-*  a) MLP-only model --> MLPAutoEncoder()
-*  b) CNN-MLP combination model --> ComboAutoEncoder()
-*  c) CNN-only model -->  CNNAutoEncoder()
+  *  MLP-only model --> MLPAutoEncoder()
+  *  CNN-MLP combination model --> ComboAutoEncoder()
+  *  CNN-only model -->  CNNAutoEncoder()
 
 In all the models, encoder and decoder should be consisting of  3  layers each, and the encoder should be giving a flattened representation of size  32 .
 
 I have tabulated Model Size , Model Parameters , Time Taken per epoch for each of these models 
 
 2. Playing with the following representation sizes of the image
-  a. 10 --> CNNAutoEncoder10()
-  b. 32 --> CNNAutoEncoder32()
-  c. 100 --> CNNAutoEncoder100()
-  d. 1000 --> CNNAutoEncoder1000()
+  * 10 --> CNNAutoEncoder10()
+  * 32 --> CNNAutoEncoder32()
+  * 100 --> CNNAutoEncoder100()
+  * 1000 --> CNNAutoEncoder1000()
 
 These are the size of the encoded images that is further used to decode the image and this size is flattened representation.
 
 3. Playing with following layers of encoder and decoder each
-  a) 1 --> CNNAutoEncoderL1()
-  b) 3 --> CNNAutoEncoderL3()
-  c) 5 --> CNNAutoEncoderL5()
-  d) 10 --> CNNAutoEncoderL10()
+  * 1 --> CNNAutoEncoderL1()
+  * 3 --> CNNAutoEncoderL3()
+  * 5 --> CNNAutoEncoderL5()
+  * 10 --> CNNAutoEncoderL10()
   
 ### Part - 2
 
 In this section , we have used KNN on the encoded image. Here, we have model which has representation size of 10 and then extracted the encoded images from the trained model
 Now we have applied KNN on these encoded image which will reduce the computation cost when compared to images of large size.
+
+
+## Comments for each step have been added in the jupyter notebook which will help to understand better.
  
 
 
