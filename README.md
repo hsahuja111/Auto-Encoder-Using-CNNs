@@ -26,9 +26,9 @@ Now comes the Decoder which uses this encoded image generates the image of origi
 ### Part - 1
 
 1. Training 3 different types of models for Auto Encoder
-  a) MLP-only model --> MLPAutoEncoder()
-  b) CNN-MLP combination model --> ComboAutoEncoder()
-  c) CNN-only model -->  CNNAutoEncoder()
+*  a) MLP-only model --> MLPAutoEncoder()
+*  b) CNN-MLP combination model --> ComboAutoEncoder()
+*  c) CNN-only model -->  CNNAutoEncoder()
 
 In all the models, encoder and decoder should be consisting of  3  layers each, and the encoder should be giving a flattened representation of size  32 .
 
