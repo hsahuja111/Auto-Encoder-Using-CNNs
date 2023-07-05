@@ -54,7 +54,7 @@ In this section , we have used KNN on the encoded image. Here, we have model whi
 Now we have applied KNN on these encoded image which will reduce the computation cost when compared to images of large size.
 
 
-## Comments for each step have been added in the jupyter notebook which will help to understand better.
+#### Comments for each step have been added in the jupyter notebook which will help to understand better.
  
 
 
